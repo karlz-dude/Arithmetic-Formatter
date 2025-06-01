@@ -14,7 +14,7 @@ def arithmetic_formatter(problems, show_answers=False):
         left, operator, right = parts
 
         # Additional check to see if it is right format
-        if parts != 3:
+        if len(parts) != 3:
             return 'Error: Invalid format'
 
         # Only numbers
